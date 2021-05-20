@@ -258,19 +258,19 @@ public class TelaEquacao extends javax.swing.JFrame {
         // TODO add your handling code here:
         lblC.setText(txtC.getValue().toString());
     }//GEN-LAST:event_txtCStateChanged
-
+    // CODIGO PRINCIPAL .................. :
     private void btnCalcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcActionPerformed
         // TODO add your handling code here:
         int a = Integer.parseInt(txtA.getValue().toString());
         int b = Integer.parseInt(txtB.getValue().toString());
         int c = Integer.parseInt(txtC.getValue().toString());
-        
+     // AQUI A FORMULA DO DELTA........:    
         double d = Math.pow(b, 2) - 4 * a * c;
         lblDelta.setText(String.format("%.1f", d));
         if (d < 0){
-            lblRaiz.setText("Não existe raizes Reais");
+            lblRaiz.setText("Não existe raizes reais");
         }else{
-              lblRaiz.setText("Existem raizes Reais");
+              lblRaiz.setText("Existem raizes reais");
         }
         
         panResultado.setVisible(true);
